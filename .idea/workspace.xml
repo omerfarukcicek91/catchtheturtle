@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e43d1690-c0ac-4819-a658-cf06b0c48fdf" name="Changes" comment="catch the turtles has been completed">
+      <change afterPath="$PROJECT_DIR$/CatchTheTurtleAtilSamancioglu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CatchTheTurtle.py" beforeDir="false" afterPath="$PROJECT_DIR$/CatchTheTurtle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,18 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "omerfarukcicek91"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;omerfarukcicek91&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/omerfarukcicek91/catchtheturtle.git",
-    "accountId": "e4a2589d-9eeb-46b2-87ab-36f4191638f7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/omerfarukcicek91/catchtheturtle.git&quot;,
+    &quot;accountId&quot;: &quot;e4a2589d-9eeb-46b2-87ab-36f4191638f7&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -47,6 +47,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.CatchTheTurtle.executor": "Run",
+    "Python.CatchTheTurtleAtilSamancioglu.executor": "Run",
     "Python.TurtleIntAtil2.executor": "Run",
     "Python.TurtleInteractiveDrawingBoard.executor": "Run",
     "Python.main.executor": "Run",
@@ -82,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735944981684</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="catch the turtles has been completed">
+      <option name="closed" value="true" />
+      <created>1736162280586</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736162280586</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -63,24 +63,6 @@ def random_movement():
     return turtle_instance.setpos(x,y)
 
 
-def countdown():
-    for i in range(15, 0, -1):
-        time.sleep(1)
-        countdown_turtle.clear()
-        countdown_turtle.write(f"{i}", align="center", font=("Arial", 24, "normal"))
-
-    countdown_turtle.clear() # Geri sayım tamamlandığında yazıyı temizle
-    turtle_instance.clear()
-    countdown_turtle.write("GAME OVER!", align="center", font=("Arial", 24, "bold"))
-    turtle.done()
-
-
-
-
-mouse_click_coordinates = []
-turtle_coordinates = []
-
-
 
 
 
@@ -96,15 +78,19 @@ score_caught_count.penup()
 score_caught_count.goto(80, 250)
 score_caught_count.write("0", align="center", font=("Arial", 24, "bold"))
 
+
+is_game_active = True
 final_score:int = 0
+
+
 def is_turtle_clicked(x, y):
     # Turtle'ın pozisyonunu al
-    global final_score
+    global final_score, is_game_active
+    if not is_game_active:
+        return
     turtle_pos = turtle_instance.position()
-
-
     # Tıklama koordinatını kontrol et
-    if turtle_pos[0] - 20 <= x <= turtle_pos[0] + 20 and turtle_pos[1] - 20 <= y <= turtle_pos[1] + 20:
+    if turtle_pos[0] - 15 <= x <= turtle_pos[0] + 15 and turtle_pos[1] - 15 <= y <= turtle_pos[1] + 15:
         final_score +=1
         score_caught_count.clear()
         score_caught_count.write(f"{final_score}", align="center", font=("Arial", 24, "bold"))
@@ -113,6 +99,24 @@ def is_turtle_clicked(x, y):
 
 turtle.onscreenclick(is_turtle_clicked)
 
+
+def countdown():
+    global is_game_active
+    for i in range(15, 0, -1):
+        time.sleep(1)
+        countdown_turtle.clear()
+        countdown_turtle.write(f"{i}", align="center", font=("Arial", 24, "normal"))
+    is_game_active = False
+    countdown_turtle.clear() # Geri sayım tamamlandığında yazıyı temizle
+    turtle_instance.clear()
+    countdown_turtle.write("GAME OVER!", align="center", font=("Arial", 24, "bold"))
+    turtle.done()
+
+
+
+
+mouse_click_coordinates = []
+turtle_coordinates = []
 
 
 '''
@@ -144,5 +148,5 @@ scorecaught_thread.start()
 
 
 
-turtle.done()
+turtle.mainloop()
 #drawing_board.exitonclick()
